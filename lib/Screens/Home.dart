@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:pet_app/Screens/Appoinment.dart';
 import 'package:pet_app/Screens/Donation.dart';
 import 'package:pet_app/Screens/accessories.dart';
+import 'package:pet_app/Screens/daycare.dart';
 import 'package:pet_app/Screens/dogCafe.dart';
 import 'package:pet_app/Screens/dogPark.dart';
 import 'package:pet_app/Screens/dogShow.dart';
@@ -29,8 +30,8 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: const Color.fromARGB(255, 255, 175, 55),
         title: Text(
           'Little Paw',
-          style: GoogleFonts.caveat(
-            fontSize: 40,
+          style: GoogleFonts.aboreto(
+            fontSize: 30,
             color: Colors.black,
             fontWeight: FontWeight.bold,
           ),
@@ -82,7 +83,7 @@ class _HomePageState extends State<HomePage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => const Appointment()),
+                                  builder: (context) => Appointment()),
                             );
                           }),
                       const SizedBox(width: 10),
@@ -93,7 +94,7 @@ class _HomePageState extends State<HomePage> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => Donation()),
+                                  builder: (context) => DayCare()),
                             );
                           })
                     ],
